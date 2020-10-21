@@ -31,8 +31,6 @@ def get_free(domains):
         if data['available'] == 'yes':
             free.append(data['domain'])
             f.write(data['domain']+'\n')
-            print('+++++++++++')
-        print(data['domain'],data['available'])
         if len(free)==20:
             f.close()
             return free
